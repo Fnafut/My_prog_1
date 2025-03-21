@@ -25,11 +25,11 @@ fig, ax = plt.subplots(figsize=(8, 8))
 ax.set_xlim([-l * 1.2, l * 1.2])
 ax.set_ylim([-l * 1.2, l * 1.2])
 ax.set_aspect('equal')
-ax.set_xlabel('X')
-ax.set_ylabel('Y')
-ax.set_title('Маятник')
+ax.set_xlabel('Горизонтальное положение')
+ax.set_ylabel('Вертикальное положение')
+ax.set_title('Математический маятник')
 
-line, = ax.plot([], [], 'r-', lw=2)
+line, = ax.plot([], [], 'o-', lw=2)
 
 # кадры
 def update(frame):
